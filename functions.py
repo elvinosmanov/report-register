@@ -7,3 +7,11 @@ def create_folder(path):
         return True
     else:    
         return False
+
+# two parameters:
+# 1. df ---> Pandas DataFrame
+# 2. column_names--> List<String>
+# It will return dataframe with sepcific columns: 
+def custom_df(df, column_names):
+    return df.loc[:,column_names]
+    
