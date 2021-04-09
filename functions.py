@@ -1,7 +1,9 @@
 import os
+# If Folder exist , function will return False value
+# IF Folder does not exist, function will create folder and return True value
 def create_folder(path):
     if not os.path.exists(path):
         os.makedirs(path)
-        print("Directory " , dirName1 ,  " Created ")
+        return True
     else:    
-        print("Directory " , dirName1 ,  " already exists")
+        return False
